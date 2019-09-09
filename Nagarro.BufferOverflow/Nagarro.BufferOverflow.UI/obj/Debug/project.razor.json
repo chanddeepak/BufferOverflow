@@ -1,0 +1,18 @@
+{
+  "FilePath": "d:\\Training\\Exit Project\\Nagarro.BufferOverflow\\Nagarro.BufferOverflow\\Nagarro.BufferOverflow.UI\\Nagarro.BufferOverflow.UI.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": null,
+  "Documents": []
+}

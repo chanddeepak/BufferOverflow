@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Nagarro.BufferOverflow.BusinessFacades",
+    "\\Nagarro.BufferOverflow.DTOModel",
+    "\\Nagarro.BufferOverflow.EntityDataModel",
+    "\\Nagarro.BufferOverflow.Shared",
+    "\\Nagarro.BufferOverflow.UI",
+    "\\obj",
+    "\\OutputBin"
+  ],
+  "SelectedNode": "\\Nagarro.BufferOverflow.sln",
+  "PreviewInSolutionExplorer": false
+}

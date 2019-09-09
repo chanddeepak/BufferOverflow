@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DAA8D3F3-2BDE-4A4F-B591-A28C215C8EE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nagarro.BufferOverflow.Shared</RootNamespace>
+    <AssemblyName>Nagarro.BufferOverflow.Shared</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Functional\BusinessDomainComponents\IAnswerBDC.cs" />
+    <Compile Include="Functional\BusinessDomainComponents\IQuestionBDC.cs" />
+    <Compile Include="Functional\BusinessDomainComponents\ITagBDC.cs" />
+    <Compile Include="Functional\BusinessDomainComponents\IUserBDC.cs" />
+    <Compile Include="Functional\BusinessDomainComponents\IVoteBDC.cs" />
+    <Compile Include="Functional\BusinessFacades\IAnswerFacade.cs" />
+    <Compile Include="Functional\BusinessFacades\IQuestionFacade.cs" />
+    <Compile Include="Functional\BusinessFacades\ITagFacade.cs" />
+    <Compile Include="Functional\BusinessFacades\IUserFacade.cs" />
+    <Compile Include="Functional\BusinessFacades\IVoteFacade.cs" />
+    <Compile Include="Functional\DataAccessComponents\IAnswerDAC.cs" />
+    <Compile Include="Functional\DataAccessComponents\IQuestionDAC.cs" />
+    <Compile Include="Functional\DataAccessComponents\ITagDAC.cs" />
+    <Compile Include="Functional\DataAccessComponents\IUserDAC.cs" />
+    <Compile Include="Functional\DataAccessComponents\IVoteDAC.cs" />
+    <Compile Include="Functional\DataTransferObjects\IAnswerDTO.cs" />
+    <Compile Include="Functional\DataTransferObjects\IDataDTO.cs" />
+    <Compile Include="Functional\DataTransferObjects\IQuestionDTO.cs" />
+    <Compile Include="Functional\DataTransferObjects\ITagRelationDTO.cs" />
+    <Compile Include="Functional\DataTransferObjects\ITagsDTO.cs" />
+    <Compile Include="Functional\DataTransferObjects\IUserDTO.cs" />
+    <Compile Include="Functional\DataTransferObjects\IVoteDTO.cs" />
+    <Compile Include="Infrastructure\Business\BDCBase.cs" />
+    <Compile Include="Infrastructure\Business\BDCFactory.cs" />
+    <Compile Include="Infrastructure\Business\IBDCFactory.cs" />
+    <Compile Include="Infrastructure\Business\IBusinessDomainComponent.cs" />
+    <Compile Include="Infrastructure\Common\CommonAttributes\DisplayTextKeyAttribute.cs" />
+    <Compile Include="Infrastructure\Common\CommonAttributes\EntityPropertyMappingAttribute.cs" />
+    <Compile Include="Infrastructure\Common\CommonAttributes\QualifiedTypeNameAttribute.cs" />
+    <Compile Include="Infrastructure\Common\Constants\AppConstants.cs" />
+    <Compile Include="Infrastructure\Common\Constants\SuppressMessageConstants.cs" />
+    <Compile Include="Infrastructure\Common\EntityModel\CustomAttributes\EntityMappingAttribute.cs" />
+    <Compile Include="Infrastructure\Common\EntityModel\Enums\MappingDirectionType.cs" />
+    <Compile Include="Infrastructure\Common\EntityModel\Enums\MappingType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\BDCType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\DACType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\DTOType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\FacadeType.cs" />
+    <Compile Include="Infrastructure\Common\Enums\ObjectStateType.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionHandling\Base\ExceptionBase.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionHandling\CustomExceptionHandling\AttributeNotDefinedException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionHandling\CustomExceptionHandling\BDCException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionHandling\CustomExceptionHandling\DACException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionHandling\CustomExceptionHandling\FactoryException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionHandling\CustomExceptionHandling\NotificationException.cs" />
+    <Compile Include="Infrastructure\Common\ExceptionHandling\ExceptionManager.cs" />
+    <Compile Include="Infrastructure\Common\Factory\FactoryBase.cs" />
+    <Compile Include="Infrastructure\Common\OperationResult\OperationResult.cs" />
+    <Compile Include="Infrastructure\Common\OperationResult\OperationResultType.cs" />
+    <Compile Include="Infrastructure\Common\Utilities\EnumAttributeUtility.cs" />
+    <Compile Include="Infrastructure\Common\Utilities\ResourceUtility.cs" />
+    <Compile Include="Infrastructure\Common\Utilities\ValidatorUtility.cs" />
+    <Compile Include="Infrastructure\Common\Validations\NagarroBufferOverflowValidationFailure.cs" />
+    <Compile Include="Infrastructure\Common\Validations\NagarroBufferOverflowValidationResult.cs" />
+    <Compile Include="Infrastructure\DAC\DACBase.cs" />
+    <Compile Include="Infrastructure\DAC\DACFactory.cs" />
+    <Compile Include="Infrastructure\DAC\IDACFactory.cs" />
+    <Compile Include="Infrastructure\DAC\IDataAccessComponent.cs" />
+    <Compile Include="Infrastructure\DTO\CustomAttributes\ViewModelMappingAttribute.cs" />
+    <Compile Include="Infrastructure\DTO\DTOBase.cs" />
+    <Compile Include="Infrastructure\DTO\DTOFactory.cs" />
+    <Compile Include="Infrastructure\DTO\IDTO.cs" />
+    <Compile Include="Infrastructure\DTO\IDTOFactory.cs" />
+    <Compile Include="Infrastructure\Facades\FacadeBase.cs" />
+    <Compile Include="Infrastructure\Facades\FacadeFactory.cs" />
+    <Compile Include="Infrastructure\Facades\IFacade.cs" />
+    <Compile Include="Infrastructure\Facades\IFacadeFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "*$(TargetExt)" "$(SolutionDir)OutputBin"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

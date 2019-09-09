@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BufferOverflowDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Answers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Answer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="QuestionId" Type="Int32" Nullable="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_Answer_Question" FromRole="Answers" ToRole="Questions" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Answer_User" FromRole="Answers" ToRole="User" />
+    <NavigationProperty Name="Votes" Relationship="Self.FK_Vote_Answer" FromRole="Answers" ToRole="Votes" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AnswerCount" Type="Int32" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Answers" Relationship="Self.FK_Answer_Question" FromRole="Questions" ToRole="Answers" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Question_User" FromRole="Questions" ToRole="User" />
+    <NavigationProperty Name="TagRelation" Relationship="Self.FK_TagRelation_Question" FromRole="Questions" ToRole="TagRelation" />
+  </EntityType>
+  <EntityType Name="TagRelation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TagId" Type="Int32" Nullable="false" />
+    <Property Name="QuestionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_TagRelation_Question" FromRole="TagRelation" ToRole="Questions" />
+    <NavigationProperty Name="Tags" Relationship="Self.FK_TagRelation_Tags" FromRole="TagRelation" ToRole="Tags" />
+  </EntityType>
+  <EntityType Name="Tags">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="TagRelation" Relationship="Self.FK_TagRelation_Tags" FromRole="Tags" ToRole="TagRelation" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Answers" Relationship="Self.FK_Answer_User" FromRole="User" ToRole="Answers" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_Question_User" FromRole="User" ToRole="Questions" />
+    <NavigationProperty Name="Votes" Relationship="Self.FK_Vote_User" FromRole="User" ToRole="Votes" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="Votes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Vote" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AnswerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Answers" Relationship="Self.FK_Vote_Answer" FromRole="Votes" ToRole="Answers" />
+    <NavigationProperty Name="User" Relationship="Self.FK_Vote_User" FromRole="Votes" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_Answer_Question">
+    <End Role="Questions" Type="Self.Questions" Multiplicity="1" />
+    <End Role="Answers" Type="Self.Answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Questions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Answers">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Answer_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Answers" Type="Self.Answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Answers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vote_Answer">
+    <End Role="Answers" Type="Self.Answers" Multiplicity="1" />
+    <End Role="Votes" Type="Self.Votes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Answers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="AnswerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Question_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Questions" Type="Self.Questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Questions">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TagRelation_Question">
+    <End Role="Questions" Type="Self.Questions" Multiplicity="1" />
+    <End Role="TagRelation" Type="Self.TagRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Questions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TagRelation">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TagRelation_Tags">
+    <End Role="Tags" Type="Self.Tags" Multiplicity="1" />
+    <End Role="TagRelation" Type="Self.TagRelation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tags">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TagRelation">
+        <PropertyRef Name="TagId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vote_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="Votes" Type="Self.Votes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Votes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BufferOverflowDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Answers" EntityType="Self.Answers" />
+    <EntitySet Name="Questions" EntityType="Self.Questions" />
+    <EntitySet Name="TagRelation" EntityType="Self.TagRelation" />
+    <EntitySet Name="Tags" EntityType="Self.Tags" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <EntitySet Name="Votes" EntityType="Self.Votes" />
+    <AssociationSet Name="FK_Answer_Question" Association="Self.FK_Answer_Question">
+      <End Role="Questions" EntitySet="Questions" />
+      <End Role="Answers" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Answer_User" Association="Self.FK_Answer_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Answers" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vote_Answer" Association="Self.FK_Vote_Answer">
+      <End Role="Answers" EntitySet="Answers" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Question_User" Association="Self.FK_Question_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Questions" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TagRelation_Question" Association="Self.FK_TagRelation_Question">
+      <End Role="Questions" EntitySet="Questions" />
+      <End Role="TagRelation" EntitySet="TagRelation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TagRelation_Tags" Association="Self.FK_TagRelation_Tags">
+      <End Role="Tags" EntitySet="Tags" />
+      <End Role="TagRelation" EntitySet="TagRelation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vote_User" Association="Self.FK_Vote_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Votes" EntitySet="Votes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

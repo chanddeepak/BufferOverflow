@@ -1,0 +1,6 @@
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Shared\bin\Debug\Nagarro.BufferOverflow.Shared.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Shared\bin\Debug\Nagarro.BufferOverflow.Shared.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Shared\obj\Debug\Nagarro.BufferOverflow.Shared.csproj.CoreCompileInputs.cache
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Shared\obj\Debug\Nagarro.BufferOverflow.Shared.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Shared\obj\Debug\Nagarro.BufferOverflow.Shared.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Shared\obj\Debug\Nagarro.BufferOverflow.Shared.csprojAssemblyReference.cache

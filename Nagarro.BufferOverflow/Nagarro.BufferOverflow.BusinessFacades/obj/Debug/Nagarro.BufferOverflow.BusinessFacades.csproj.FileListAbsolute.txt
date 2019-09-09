@@ -1,0 +1,13 @@
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\Nagarro.BufferOverflow.BusinessFacades.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\Nagarro.BufferOverflow.BusinessFacades.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\Nagarro.BufferOverflow.Business.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\Nagarro.BufferOverflow.Shared.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\FluentValidation.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\Nagarro.BufferOverflow.Business.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\Nagarro.BufferOverflow.Shared.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\bin\Debug\FluentValidation.xml
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\obj\Debug\Nagarro.BufferOverflow.BusinessFacades.csprojAssemblyReference.cache
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\obj\Debug\Nagarro.BufferOverflow.BusinessFacades.csproj.CoreCompileInputs.cache
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\obj\Debug\Nagarro.BufferOverflow.BusinessFacades.csproj.CopyComplete
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\obj\Debug\Nagarro.BufferOverflow.BusinessFacades.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.BusinessFacades\obj\Debug\Nagarro.BufferOverflow.BusinessFacades.pdb

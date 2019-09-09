@@ -1,0 +1,17 @@
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.Data.dll.config
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.Data.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.Data.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\EntityFramework.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.EntityDataModel.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.Shared.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.EntityDataModel.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.EntityDataModel.dll.config
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\Nagarro.BufferOverflow.Shared.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\EntityFramework.xml
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\obj\Debug\Nagarro.BufferOverflow.Data.csprojAssemblyReference.cache
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\obj\Debug\Nagarro.BufferOverflow.Data.csproj.CoreCompileInputs.cache
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\obj\Debug\Nagarro.BufferOverflow.Data.csproj.CopyComplete
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\obj\Debug\Nagarro.BufferOverflow.Data.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.Data\obj\Debug\Nagarro.BufferOverflow.Data.pdb

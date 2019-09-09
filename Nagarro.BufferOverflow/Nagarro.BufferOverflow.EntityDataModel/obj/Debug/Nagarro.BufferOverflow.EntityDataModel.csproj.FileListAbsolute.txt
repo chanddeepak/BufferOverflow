@@ -1,0 +1,14 @@
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\Nagarro.BufferOverflow.EntityDataModel.dll.config
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\Nagarro.BufferOverflow.EntityDataModel.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\Nagarro.BufferOverflow.EntityDataModel.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\EntityFramework.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\Nagarro.BufferOverflow.Shared.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\Nagarro.BufferOverflow.Shared.pdb
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\EntityFramework.xml
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\obj\Debug\Nagarro.BufferOverflow.EntityDataModel.csprojAssemblyReference.cache
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\obj\Debug\Nagarro.BufferOverflow.EntityDataModel.csproj.CoreCompileInputs.cache
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\obj\Debug\Nagarro.BufferOverflow.EntityDataModel.csproj.CopyComplete
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\obj\Debug\Nagarro.BufferOverflow.EntityDataModel.dll
+D:\Training\Exit Project\Nagarro.BufferOverflow\Nagarro.BufferOverflow\Nagarro.BufferOverflow.EntityDataModel\obj\Debug\Nagarro.BufferOverflow.EntityDataModel.pdb
